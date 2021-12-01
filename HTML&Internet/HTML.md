@@ -36,7 +36,7 @@ Web 은 public Domain 이다
 
 - `<table></table>` 테이블 만들때 이 안에 `<tr></tr>` 그 안에 `<td></td>` 로 표를 구성 
 
-- `<title></title>`  웹페이지 제목  
+- `<title></title>`  웹페이지 제목  탭에 뜨는 이름 
 
 - `<meta charset="utf-8">`  한글로 출력하고 싶을 때 / 글이 안 깨지게 하기 위해선 붙여줘야한다. 
 
