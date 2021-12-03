@@ -235,3 +235,43 @@ cols 는 열
 
 ----------------------------------------------------------------------
 
+#### 반응형 디자인 
+
+화면 크기에 따라 각 요소들이 유동적으로 바뀌는 웹 
+
+Media Query 
+
+
+
+screen width < 800px = @media(max-width:800px)
+
+스크린의 크기가 800px 보다 작다는 것은 스크린의 크기가 최대 800px 이어야 한다는 의미
+
+screen width > 800px = @media(min-width:800px)
+
+
+
+------
+
+중복의 제거 
+
+
+
+모든 html 파일의 CSS를 통일하고 싶다면 
+
+style.css 라는 html 파일을 새로 만들어서 
+
+기존 html 파일에 있었던 `<style>` 태그 안쪽의 CSS 을 복사해 style.css 로 옮기면 된다 . 
+
+
+
+그리고 기존 html 파일의 `<style></style>` 태그 위치에 `<style></style>` 및 안쪽 내용은 다 지워버리고 
+
+`<link rel="stylesheet" href="style.css">` 이라고 써 넣으면 된다. 
+
+
+
+그럼 나중에 CSS 수정할 일이 생겨도 style.css  만 수정해도 모두 수정되기 때문에 
+
+코드가 간결해지고 작업이 수월해진다. 
+
