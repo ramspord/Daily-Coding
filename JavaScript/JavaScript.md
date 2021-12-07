@@ -110,9 +110,117 @@ variable
 
 
 
-#### 7장 CSS 기초 (복습)
+#### 7장 CSS 기초 (패쓰)
 
-9/38 
+
+
+#### 8장 제어할 태그 선택하기 (주간모드 야간모드)
+
+`<body>
+
+`<input type="button" value="night" onclick=" 
+
+document.querySelector('body').style.backgroundColor='black';
+
+document.querySelector('body').style.color='white';
+
+">`
+
+`<input type="button" value="day" onclick=" 
+
+document.querySelector('body').style.backgroundColor='white';
+
+document.querySelector('body').style.color='black';
+
+">`
+
+</body>`
+
+- 이 문서에서 웹 브라우저에게 질의한다  CSS의 셀렉터 ('body') 
+
+  query 는 질의하다의 의미 
+
+  .color 는 텍스트 (글자)의 색 변환을 담당
+
+  또한 
+
+  CSS에서는 바탕색 명령어가 background-color인 반면 
+
+  자바스크립트에선 backgroundColor   C 가 대문자로 온다 
+
+
+
+#### 9장 프로그램, 프로그래밍, 프로그래머
+
+프로그램 = 순서 
+
+프로그래밍 = 순서를 만드는 행위 
+
+프로그래머 = 순서를 만드는 사람 
+
+HTML은 순서에 따라 진행되지 않지만 
+
+아래 (주간모드/야간모드) 코드처럼 
+
+`<input type="button" value="night" onclick=" 
+
+document.querySelector('body').style.backgroundColor='black';
+
+document.querySelector('body').style.color='white';
+
+">`
+
+버튼을 누르면 까매지고 글자가 하얘진다 처럼 
+
+자바스크립트는 순서에 따라 작업이 진행된다. 
+
+
+
+#### 10장 조건문 (if)
+
+하나의 프로그램이 하나의 흐름으로 가는 것이 아니라 조건에 따라서 다른 순서의 기능들이 실행되도록 하는 것 
+
+토글 = 낮과 밤을 바꾸는 것처럼 상반된 결과를 가져다 주는 기능의 명칭 
+
+
+
+#### 11장 비교 연산자와 블리언 
+
+비교 연산자  ===  Comparison operators
+
+블리언 true  false  Boolean 
+
+`document.write(1===1);`
+
+true 
+
+`document.write(1===2);`
+
+false
+
+
+
+`<h3>1&lt;2</h3>`
+
+`<script>document.write(1<2);</script>`
+
+1&lt2  는  1< 2 와 의미가 같다    & 엔퍼센트 less than ;
+
+
+
+#### 12장 조건문 
+
+
+
+16/38
+
+
+
+
+
+
+
+
 
 
 
