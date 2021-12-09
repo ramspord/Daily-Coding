@@ -208,11 +208,37 @@ false
 
 
 
-#### 12장 조건문 
+#### 12장 조건문 (Conditional statements)
+
+`<script>`
+
+document.write();
+
+if (true/false) {
+
+document.write(); (true면 실행 그리고 3번이 패쓰되고)
+
+}else {
+
+document.write(); (false면 실행 2번이 패쓰된다)
+
+}
+
+document.write();
+
+`</script>`
 
 
 
-16/38
+if 뒤 () 안에는 boolean 데이터 타입(true/false)이 온다. 
+
+따라서 조건에 따라 true가 오고 false가 오게끔 하면 된다. 
+
+
+
+#### 13장  17/38
+
+
 
 
 
