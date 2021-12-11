@@ -236,7 +236,126 @@ if 뒤 () 안에는 boolean 데이터 타입(true/false)이 온다.
 
 
 
-#### 13장  17/38
+#### 13장   조건문 주간/야간모드 
+
+
+
+`<input id="night_day" type="button" value="night" onclick="`
+
+if(document.querySelector('#night_day').value === 'night'){
+
+document.querySelector('body').style.backgroundColor= 'black';
+
+document.querySelector('body').style.color='white';
+
+document.querySelector('#night_day').value ='day';
+
+}else{
+
+document.querySelector('body').style.backgroundColor= 'white';
+
+document.querySelector('body').style.color='black';
+
+document.querySelector('#night_day').value ='night';
+
+}
+
+`">`
+
+
+
+#### 14장 리팩토링 (중복의 제거)
+
+틈틈히 해야 좋은 프로그래밍을 할 수 있다 
+
+비효율적인 것들을 제거하는 것 
+
+
+
+`<input type="button" value="night" onclick="`
+
+if(this.value === 'night'){
+
+document.querySelector('body').style.backgroundColor= 'black';
+
+document.querySelector('body').style.color='white';
+
+this.value ='day';
+
+}else{
+
+document.querySelector('body').style.backgroundColor= 'white';
+
+document.querySelector('body').style.color='black';
+
+this.value ='night';
+
+}
+
+`">`
+
+- 위는 중복된 document.querySelector('#night_day') 해당 명령어를 this 로 바꾼 것이다 
+- this는 자기 자신을 가리킨다 따라서 자기 자신을 가리키는 위 명령어는 this로 바꾸어 사용할 수 있는 것이다.
+
+
+
+`<input type="button" value="night" onclick="`
+
+var target = document.querySelector('body'); 
+
+if(this.value === 'night'){
+
+target.style.backgroundColor= 'black';
+
+target.style.color='white';
+
+this.value ='day';
+
+}else{
+
+target.style.backgroundColor= 'white';
+
+target.style.color='black';
+
+this.value ='night';
+
+}
+
+`">`
+
+
+
+- 또한 위는 중복된 document.querySelector('body') 명령어를 target이라는 변수에 대입해 코드의 중복을 제거한 예시이다. 
+
+
+
+#### 15장 반복문 (배열)
+
+
+
+var coworkers = ["egoing", "leezche"];
+
+document.write(coworkers[0]);   0번째 배열 추출 / 배열은 항상 0부터 수를 센다.
+
+document.write(coworkers.length);  배열안에 단어가 몇 개가 있는지 확인하는 명령어 /  2 / length는 1부터 
+
+coworkers.push('duru');
+
+coworkers.push('taeho');  배열에 단어 추가하는 명령어 
+
+
+
+#### 16장 반복문 
+
+
+
+
+
+
+
+
+
+
 
 
 
