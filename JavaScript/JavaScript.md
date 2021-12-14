@@ -345,7 +345,69 @@ coworkers.push('taeho');  배열에 단어 추가하는 명령어
 
 
 
-#### 16장 반복문  21/38
+#### 16장 반복문  
+
+반복문의 영문명은 Loop 
+
+`<script>`
+
+document.write('<li>1<li>');
+
+var i =0;   ( i 가 0이라면)
+
+while(i < 3){   (0<3, 1<3, 2<3, 3=3)
+
+document.write('<li>2<li>');
+
+document.write('<li>3<li>');
+
+i = i  + 1; (0+1, 1+1, 2+1)
+
+}
+
+document.write('<li>4<li>');
+
+`</script>`
+
+
+
+- 반복문의 기본문법은 while (){}
+
+  if 문은 if(){}   if 뒤 () 괄호에 true or false (boolean)데이터 타입이 들어간다 
+
+  while문은 if문과 비슷하지만 
+
+  while 괄호 안이 (true)이면 {} 중괄호 안 데이터는 반복적으로 실행된다.
+
+  그리고 괄호 안이 (false)가 되면 그 다음 명령어로 넘어간다 
+
+  위 코드는 i 가 반복해서 3이 된 후 숫자 4로 넘어간 예시이다
+
+
+
+#### 17장 배열과 반복문 
+
+22/38
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
