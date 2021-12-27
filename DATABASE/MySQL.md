@@ -84,9 +84,49 @@ Mysql 설치 해보기
 
 8.1  5:00
 
+---------
+
+#### 테이블의 생성  8.2 
+
+- create table topic (
+
+  no INT(11) not null auto_increment,
+
+  title varchar(100) not null, 
+
+  description text null,
+
+  created datetime not null, 
+
+  author varchar(30) null,
+
+  profile varchar(100) null,
+
+  primary key(no)
+
+  );
+
+mysql이 excel 이랑 다른 점은 컬럼의 데이터 타입을 강제할 수 있다는데 있다. 
+
+- INT vs BIGiNT (빅인트 안 쓰는 이유는 거기까지 쓸 필요가 없기 때문 INT 는 42억까지 커버 가능)
+- NOT NULL 은 (값이 없는것을 허용하지 않겠다는 뜻) 
+- auto_increment (자동증가: 자동으로 수가 올라가게끔 하는 명령어 )
+
+- varchar 은 (255개의 문자까지만 허용)
+
+- text 는 (6만5천개의 문자까지 허용)
+
+- datetime 은 (날짜와 시간까지 표시됨 2021-12-24 14:15:66)
+
+- primary key 는 (중복되어선 안되는 고유해야하는 값을 지정할때 쓰는 명령어
+
+  예를 들어 순번 ex, no (1,2,3,4))
 
 
 
+----------------
+
+#### CRUD   16 
 
 
 
