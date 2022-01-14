@@ -126,7 +126,27 @@ mysql이 excel 이랑 다른 점은 컬럼의 데이터 타입을 강제할 수 
 
 ----------------
 
-#### CRUD   16 
+#### CRUD  
+
+- 어떠한 컬럼의 값을 보고 싶을때 DESC topic;  이런식으로 치면 해당 정보가 출력된다 
+
+
+
+##### INSERT
+
+- insert into topic (title,description) values ('MySQL', 'MySQL is ...', );
+
+  이런식으로 주제등은 , 로  값은 ' ' 로 
+
+  값에서 현재시간 표시는 now() 
+
+- select * from topic;  (topic 테이블의 정보를 불러오는법)
+
+
+
+#### select 11
+
+
 
 
 
