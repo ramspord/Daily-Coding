@@ -132,7 +132,7 @@ mysql이 excel 이랑 다른 점은 컬럼의 데이터 타입을 강제할 수 
 
 
 
-##### INSERT
+##### create
 
 - insert into topic (title,description) values ('MySQL', 'MySQL is ...', );
 
@@ -144,9 +144,21 @@ mysql이 excel 이랑 다른 점은 컬럼의 데이터 타입을 강제할 수 
 
 
 
-#### select 11
+#### read
+
+- select id,title from topic; 특정 주제 추출 코드 
+
+- select id,title,author from topic ` where author='egoing';  `  특정 정보 안 특정 내용 추출 코드 
+
+- select id,title,author from topic ` where author='egoing'` order by id desc;  역순으로 뽑는 코드 
+
+  descending = 큰 숫자가 먼저 나온다 
+
+- select id,title,author from topic ` where author='egoing'` order by id desc `limit 2;` 
+
+  제약을 걸어 전부 말고 몇 가지 정보만 나오게끔하는 코드 
 
 
 
-
+#### update
 
