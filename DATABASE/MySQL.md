@@ -162,3 +162,16 @@ mysql이 excel 이랑 다른 점은 컬럼의 데이터 타입을 강제할 수 
 
 #### update
 
+- update topic set description='oracle is...', title='oracle' where id=2; 
+
+  where 이 중요하다 
+
+#### delete 
+
+- delete from topic where id = 5;
+
+  where 이 중요하다 아님 전체 다 삭제됨 
+
+  
+
+  
